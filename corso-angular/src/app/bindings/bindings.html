@@ -37,3 +37,24 @@ Studente: {{studente()}}
     <div class="col-sm-3">
         <p><button class="btn btn-danger" (click)="decrementa()">Diminuisce valore</button></p>
 </div>
+<h3>Property binding</h3>
+<p>Una proprieta corrisponde ad un attributo di un elemento HTML.
+    Ad esempio il tag img prevede un attributo obbligatorio: src="nome del'immagine.jpg".
+    src dal punto di vista di Angular è una propriety.
+
+    </p>
+    <div>   
+        <img class="img-fluid img-thmbnail" src="/500.jpg">
+        <p>Inserimento di una pagina in modo dinamico, con proprety binding</p>
+        <img class="img-fluid img-thmbnail" [src]="immagini[1] ">
+    </div>
+    <div class="row">
+        <div class=""col-sm-3>
+            <button class="btn btn-primary">Precedente</button>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div>
+            <img class="img-fluid img-thumbnail"
+        </div>
+    </div>

@@ -12,7 +12,8 @@ export class Bindings {
 
   // signal per un contatore numerico
   contatore: WritableSignal<number> = signal(0);
-  immagini: string []= ['corso-angular/public/500.png', 'corso-angular/public/aereo.png', 'corso-angular/public/scooter.png'];
+  
+  immagini: string []= ['/500.jpg', 'corso-angular/public/aereo.png', 'corso-angular/public/scooter.png'];
   indiceImmagine: WritableSignal<number> = signal(0);
   cambiaNome(): void {
     this.studente.set("Luca Boschi");
@@ -24,5 +25,12 @@ export class Bindings {
 
   decrementa(): void {
     this.contatore.update(n => n - 1);
+  }
+
+  precedente(): void {
+   this.indiceImmagine.update(valoreAttuale => valoreAttuale --);
+  }
+    precedente(): void {
+   this.indiceImmagine.update(valoreAttuale => valoreAttuale --);
   }
 }
